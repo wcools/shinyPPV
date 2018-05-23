@@ -11,10 +11,12 @@ shinyUI(fluidPage(
 				)
 			),
 			column(4,
-					plotOutput("PH1")
+					plotOutput("PH1",height=300),
+					plotOutput("PH1legend",height=20)
 			),
 			column(4,
-					plotOutput("PPV")
+					plotOutput("PPV",height=300),
+					plotOutput("PPVlegend",height=20)
 			)
 		),
 		fluidRow(
@@ -22,7 +24,7 @@ shinyUI(fluidPage(
 				uiOutput("comments")
 			),
 			column(6,
-				wellPanel(				)
+				h2("")
 			)
 		)
 	)
