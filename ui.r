@@ -10,18 +10,21 @@ shinyUI(fluidPage(
 					uiOutput("sT2b")
 				)
 			),
-			column(4,
-					plotOutput("PH1",height=300),
-					plotOutput("PH1legend",height=20)
-			),
+			# column(4,
+					# plotOutput("PH1",height=300),
+					# plotOutput("PH1legend",height=20)
+			# ),
 			column(4,
 					plotOutput("PPV",height=300),
 					plotOutput("PPVlegend",height=20)
-			)
+			),
+			column(4, style = "background-color:#aaaaaa;",
+					uiOutput("comments")
+				)
 		),
 		fluidRow(
 			column(6,
-				uiOutput("comments")
+				h2("")
 			),
 			column(6,
 				h2("")
