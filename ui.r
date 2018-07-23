@@ -2,6 +2,9 @@
 shinyUI(fluidPage(
 
 	titlePanel("Classification and proportion of inferences"),
+		withMathJax(),
+		  tags$div(HTML("
+                ")),
 		fluidRow(
 			column(4,
 				wellPanel(
@@ -10,10 +13,6 @@ shinyUI(fluidPage(
 					uiOutput("sT2b")
 				)
 			),
-			# column(4,
-					# plotOutput("PH1",height=300),
-					# plotOutput("PH1legend",height=20)
-			# ),
 			column(4,
 					plotOutput("PPV",height=300),
 					plotOutput("PPVlegend",height=20)
